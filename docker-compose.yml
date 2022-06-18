@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  reactapp:
+    container_name: reactapp
+    tty: true
+    build:
+      context: ./reactapp
+      dockerfile: Dockerfile
+    working_dir: /reactapp
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./reactapp:/reactapp"
+    command: sh -c "bash docker_init.sh"
