@@ -23,3 +23,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /reactapp/node_modules/
+
+/reactapp/src/configs.js
